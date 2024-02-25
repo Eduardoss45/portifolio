@@ -1,6 +1,6 @@
 @use '../variables'
-@use '../mixins' 
-    
+@use '../mixins'
+
 #information
     @include mixins.center
     flex-direction: column
@@ -8,7 +8,7 @@
     padding: 1rem
     margin-bottom: 2rem
     text-align: left
-    width: 80%
+    width: 100%
     border-radius: variables.$card-border-radius
 
     .info-card
@@ -22,12 +22,13 @@
 
         h3
             color: variables.$text-color-secondary
-            font-size: .8rem
+            font-size: 1rem
             margin-bottom: .5rem
 
         p
             color: variables.$text-color
             font-weight: bold
+            font-size: 0.9rem
 
         svg
             background-color: variables.$bg-color
@@ -45,3 +46,6 @@
         #email-icon
             color: #c17ceb
 
+    @media screen and (max-width: 768px)
+        width: 100% 
+        padding: 1rem

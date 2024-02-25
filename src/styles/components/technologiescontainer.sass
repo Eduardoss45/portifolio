@@ -1,6 +1,6 @@
 @use '../variables'
 @use '../mixins'
-    
+
 .technologies-container
     margin-bottom: 1rem
 
@@ -15,7 +15,7 @@
         padding: 1rem
         border: 1px solid #333
         width: 45%
-        border-radius: variables.$card-border-radius 
+        border-radius: variables.$card-border-radius
 
         h3
             color: variables.$text-color
@@ -24,6 +24,9 @@
         svg
             font-size: 6rem
 
+    @media screen and (max-width: 768px)
+        .technology-card
+            width: 100%
     #html
         svg
             color: #E44D26

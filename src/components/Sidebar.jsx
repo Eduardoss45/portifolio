@@ -8,8 +8,8 @@ import "../styles/components/sidebar.sass";
 const Sidebar = () => {
   return (
     <aside id="sidebar">
-      <img src={Avatar} alt="Matheus Battisti" />
-      <p className="title">Desenvolvedor</p>
+      <img src={Avatar} alt="Eduardo Souza" />
+      <p className="title">Desenvolvedor Front End</p>
       <SocialNetworkContainer />
       <InformationContainer />
       <a href="#" className="btn">

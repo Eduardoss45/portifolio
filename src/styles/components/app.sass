@@ -3,15 +3,29 @@
 #portfolio
     display: flex
     flex-wrap: wrap
-    padding: 3rem
+    padding: 1.5%
     gap: 3rem
+    justify-content: start
+    
+    @media screen and (max-width: 900px)
+        padding: 1.5%
+        flex-direction: column
+        gap: 1.5rem
+
+        img
+            width: 100%
+
 
     h1
         width: 100%
         color: variables.$text-color
         font-size: 5rem
-        margin-bottom: 4rem
+        margin-bottom: 2rem
         background: variables.$gradient
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
-        
+
+    @media screen and (max-width: 768px)
+        h1
+            font-size: 3.5rem
+            margin-bottom: 1rem
